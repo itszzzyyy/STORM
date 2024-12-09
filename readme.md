@@ -11,7 +11,7 @@ All related files are in the `datapreprocess` folder.
 ```
 cd datapreprocess
 python preprocess.py
-python main.py  --config arg-ais.ini
+python main.py  --config arg.ini
 ```
 
 You can obtain the `xxx_raw.npy` file to store the query trajectory and database trajectory
