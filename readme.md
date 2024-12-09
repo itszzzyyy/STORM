@@ -1,24 +1,38 @@
+# STORM
+
+## Dataset
+
 The dataset is available at https://hub.marinecadastre.gov/pages/vesseltraffic
 
-Dataprocess：
+## Data preprocess
 
-1.python preprocess.py to initially process the dataset
+All related files are in the `datapreprocess` folder.
 
-2.python main.py to get the training dataset and validation dataset for model training
+```
+cd datapreprocess
+python preprocess.py
+python main.py  --config arg-ais.ini
+```
 
-3.modify the arg-ais.ini and python main.py to get test data
+You can obtain the `xxx_raw.npy` file to store the query trajectory and database trajectory
 
-Model training:
+## Training
 
-Modify the `arg.ini` file and run the `main.py` file for training
+```
+cd model
+python main.py
+```
 
-Modify the `arg.ini` file for testing.
+## Evaluation
 
-You can obtain the `xxx_raw.npy` file to store the query trajectory and database trajectory, and the `meanrank.npy` file to store the test results.
+```
+python main.py
+```
 
-Demo:
+You can obtain the `mean_rank.npy` file to store the test results.
 
-Run the `demo.py` file to execute the demo.
+## Demo
 
-
-
+```
+python demo.py
+```
