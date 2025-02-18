@@ -14,7 +14,7 @@ python preprocess.py
 python main.py  --config arg.ini
 ```
 
-You can obtain the `xxx_raw.npy` file to store the query trajectory and database trajectory
+You can obtain the `1_raw_q_demo.npy and 1_raw_db_demo.npy` file to store the query trajectory and database trajectory
 
 ## Training
 
